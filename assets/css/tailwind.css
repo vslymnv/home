@@ -848,11 +848,20 @@ video {
 }
 
 .m-3{
-  margin: 0.75rem;
+  margin: 0.3rem 5rem 0.3rem 5rem;
 }
 
 .m-4{
   margin: 1rem;
+}
+
+.m-5{
+  margin: 0.3rem 2rem 0.3rem 2rem;
+}
+
+.m-6{
+  margin: 0.3rem 1rem 0.3rem 1rem;
+  padding-top: 10px;
 }
 
 .mx-1{
@@ -861,8 +870,8 @@ video {
 }
 
 .mx-2{
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 0rem;
+  margin-right: 0.7rem;
 }
 
 .my-3{
@@ -883,6 +892,29 @@ video {
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
+}
+
+.screen-size {
+  height: 30%;
+  width: 30%;
+}
+
+.screen-size-2 {
+  height: 25%;
+  width: 25%;
+}
+
+.screen-size-3 {
+  height: 35%;
+  width: 35%;
+}
+
+.float-right{
+  float: right;
+}
+
+.smaller {
+  max-width: 100px;
 }
 
 .mb-2{
@@ -922,7 +954,7 @@ video {
 }
 
 .mb-12{
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .mb-16{
@@ -989,8 +1021,8 @@ video {
 }
 
 .py-16{
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-20{
@@ -999,7 +1031,7 @@ video {
 }
 
 .py-24{
-  padding-top: 6rem;
+  padding-top: 4rem;
   padding-bottom: 6rem;
 }
 
@@ -1013,7 +1045,7 @@ video {
 }
 
 .pb-10{
-  padding-bottom: 2.5rem;
+  padding-bottom: 7rem;
 }
 
 .pt-48{
@@ -1157,6 +1189,7 @@ video {
 
 .w-full{
   width: 100%;
+  align-items: center;
 }
 
 .z-20{
@@ -1294,7 +1327,7 @@ p {
   padding-bottom: 0.5rem;
   text-transform: uppercase;
   --text-opacity: 1;
-  color: #4a5568;
+  color: #1AC854;
   color: rgba(74, 85, 104, var(--text-opacity));
   transition-duration: 300ms;
 }
@@ -1308,17 +1341,19 @@ p {
 .section-heading {
   font-size: 2.25rem;
   --text-opacity: 1;
-  color: #4a5568;
-  color: rgba(74, 85, 104, var(--text-opacity));
   font-weight: 700;
   letter-spacing: 0.025em;
 }
 
 .icon {
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
   --text-opacity: 1;
   color: #3182ce;
   color: rgba(49, 130, 206, var(--text-opacity));
+}
+
+.marg-top {
+  margin-top: 3rem;
 }
 
 .service-title {
@@ -1422,6 +1457,12 @@ p {
   display: flex;
   justify-content: center; 
   align-items: center;
+}
+
+.leaderize {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .client-logo:hover {

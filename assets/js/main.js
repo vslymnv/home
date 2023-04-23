@@ -49,7 +49,7 @@
           e.preventDefault();
           document.querySelector(elem.getAttribute('href')).scrollIntoView({
             behavior: 'smooth',
-            offsetTop: 1 - 60,
+            offsetTop: 1 - 10,
           });
         });
       });
@@ -63,7 +63,7 @@
           var currLink = sections[i];
           var val = currLink.getAttribute('href');
           var refElement = document.querySelector(val);
-          var scrollTopMinus = scrollPos + 73;
+          var scrollTopMinus = scrollPos + 500;
           if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
             document.querySelector('.page-scroll').classList.remove('active');
             currLink.classList.add('active');
@@ -134,5 +134,12 @@
         mobile: false
       });
       wow.init();
-
 })();
+
+//Nav Scrool function
+function scroolNav(tag_id) {
+  const yOffset = -80; 
+  const element = document.getElementById(`${tag_id}`);
+  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  window.scrollTo({top: y, behavior: 'smooth'});
+}

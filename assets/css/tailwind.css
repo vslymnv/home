@@ -663,9 +663,10 @@ video {
 }
 
 .hover\:bg-red-500:hover{
-  --bg-opacity: 1;
-  background-color: #f56565;
-  background-color: rgba(245, 101, 101, var(--bg-opacity));
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 }
 
 .hover\:bg-blue-400:hover{
@@ -682,14 +683,14 @@ video {
 
 .hover\:bg-indigo-500:hover{
   --bg-opacity: 1;
-  background-color: #667eea;
-  background-color: rgba(102, 126, 234, var(--bg-opacity));
+  background-color: #3b5998;
+  background-color: #3b5998;
 }
 
 .hover\:bg-indigo-600:hover{
   --bg-opacity: 1;
-  background-color: #5a67d8;
-  background-color: rgba(90, 103, 216, var(--bg-opacity));
+  background-color: #0072b1;
+  background-color: #0072b1;
 }
 
 .border-gray-700{
@@ -915,6 +916,10 @@ video {
 
 .smaller {
   max-width: 100px;
+}
+
+.mb {
+  margin-bottom: 2rem;
 }
 
 .mb-2{
@@ -1391,6 +1396,14 @@ p {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+.team-item:hover .img1 {
+  filter: grayscale(0%);
+}
+
+.img1 {
+  filter: grayscale(100%);
+}
+
 .team-overlay {
   border-radius: 50%;
   width: 50%;
@@ -1589,7 +1602,7 @@ p {
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
   border-radius: 5px;
-  font-size: 0.875rem;
+  font-size: 1.3rem;
   --text-opacity: 1;
   color: #1AC854;
   transition-duration: 300ms;

@@ -19,15 +19,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/tiny-slider.css">
   <!-- Tailwind css -->
   <link rel="stylesheet" type="text/css" href="assets/css/tailwind.css">
-  <script src="emailSend.js"></script>
-  <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
-  (function(){
-    emailjs.init("Ii5M5F-ZXuw_xV7lf");
-  })();
-  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
 
@@ -410,16 +402,16 @@
       <div class="w-full md:w-1/2">
         <div class="contact">
           <h2 class="uppercase font-bold text-xl mb ml-3">Contact Form</h2>
-          <form method="post">
+          <form action="#" class="form-contact">
             <div class="flex flex-wrap">
               <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
                 <div class="mx-3">
-                  <input type="text" class="form-input rounded-full" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                  <input type="text" class="form-input rounded-full" id="name" placeholder="Name" required data-error="Please enter your name">
                 </div>                                 
               </div>
               <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
                 <div class="mx-3">
-                  <input type="email" placeholder="Email" id="email" class="form-input rounded-full" name="email" required data-error="Please enter your email">
+                  <input type="email" placeholder="Email" id="email" class="form-input rounded-full" required data-error="Please enter your email">
                 </div> 
               </div>
               <div class="w-full">
@@ -434,7 +426,7 @@
               </div>
               <div class="w-full">
                 <div class="submit-button mx-3">
-                  <button class="btn" onclick="sendEmail()">Send Message</button>
+                  <button id="submit" type="submit" class="btn">Send Message</button>
                 </div>
               </div>
             </div>            
@@ -566,5 +558,6 @@
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/tiny-slider.js"></script>    
     <script src="assets/js/main.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

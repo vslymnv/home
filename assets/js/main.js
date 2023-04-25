@@ -42,17 +42,49 @@
 
 
       // for menu scroll 
-      var pageLink = document.querySelectorAll('.page-scroll');
+      var pageLink = document.querySelectorAll('.scroll');
 
       pageLink.forEach(elem => {
         elem.addEventListener('click', e => {
           e.preventDefault();
-          document.querySelector(elem.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth',
-            offsetTop: 1 - 10,
+
+          const val = elem.getAttribute('href');
+          const element = document.querySelector(val);
+          const offset = 75;
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - offset;
+
+          // document.querySelector(elem.getAttribute('data-scrool')).scrollIntoView({
+          //   behavior: 'smooth',
+          //   offsetTop: -100,
+          // });
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
           });
         });
       });
+      
+
+      /*var pageLink = document.querySelectorAll('.page-scroll');
+
+      pageLink.forEach(elem => {
+        elem.addEventListener('click', e => {
+          e.preventDefault();
+
+          const yOffset = -80; 
+          const val = elem.getAttribute('href');
+          const el = document.querySelector(val);
+          const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({top: y, behavior: 'smooth'});
+          // document.querySelector(elem.getAttribute('href')).scrollIntoView({
+          //   behavior: 'smooth',
+          //   offsetTop: 1 - 10,
+          // });
+        });
+      });
+      */
 
       // section menu active
       function onScroll(event) {
@@ -137,9 +169,11 @@
 })();
 
 //Nav Scrool function
+/*
 function scroolNav(tag_id) {
   const yOffset = -80; 
   const element = document.getElementById(`${tag_id}`);
   const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
   window.scrollTo({top: y, behavior: 'smooth'});
 }
+*/

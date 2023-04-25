@@ -905,6 +905,11 @@ video {
   width: 25%;
 }
 
+.screen-form {
+  height: 80%;
+  width: 80%;
+}
+
 .screen-form1 {
   height: 45%;
   width: 45%;
@@ -1014,6 +1019,11 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.px-4 {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1081,6 +1091,10 @@ video {
   padding-bottom: 7rem;
 }
 
+.pt-20 {
+  padding-top: 4rem;
+}
+
 .pt-48{
   padding-top: 9rem;
 }
@@ -1143,7 +1157,6 @@ video {
 .text-black{
   color: #000;
 }
-
 
 .text-gray-300{
   --text-opacity: 1;
@@ -1508,6 +1521,11 @@ p {
   display: flex;
   justify-content: center; 
   align-items: center;
+}
+
+.centerize-bottom {
+  display: flex;
+  justify-content: center;
 }
 
 .leaderize {

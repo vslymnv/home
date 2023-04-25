@@ -40,21 +40,21 @@
           <div class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 py-3 w-full lg:static lg:bg-transparent lg:shadow-none" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto justify-center items-center lg:flex">
               <li class="nav-item">
-                <a class="page-scroll" href="#" onclick="scroolNav('hero-area')">Home</a>
+                <a class="page-scroll scroll" href="#hero-area">Home</a>
               </li>
               <li class="nav-item">
-                <a class="page-scroll" href="#" onclick="scroolNav('feature')">Features</a>
+                <a class="page-scroll scroll" href="#howitworks">How it works?</a>
               </li>
               <li class="nav-item">
-                <a class="page-scroll" href="#" onclick="scroolNav('team')">Team</a>
+                <a class="page-scroll scroll" href="#feature">Features</a>
               </li>
               <li class="nav-item">
-                <a class="page-scroll" href="#" onclick="scroolNav('contact')">Contact</a>
+                <a class="page-scroll scroll" href="#team">Team</a>
               </li>
             </ul>
           </div>
-          <div class="text-center mb-15 wow fadeInUp" data-wow-delay="0.8s">
-            <button onclick="scroolNav('contact')" class="btn">Partnership</button>
+          <div class="text-center mb-15 wow fadeInUp" data-wow-delay="0.3s">
+            <a class="btn scroll" href="#contact">Contact</a>
           </div>
         </nav>
       </div>
@@ -84,90 +84,144 @@
   </section>
   <!-- Hero Area End -->
 
-  <hr>
+  
+  <!-- How It Works? Start -->
+  <section id="howitworks" class="graybackground py-21">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="mb-12 section-heading wow fadeInDown text-black" data-wow-delay="0.3s">How it <p class="indigotext">works</p>?</h2>
+      </div>
+
+      <div class="flex flex-wrap">
+        <!-- Work item -->
+        <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 pt-20">
+          <div class="m-4 wow fadeInRight graybackground rounded-lg" data-wow-delay="0.3s">
+            <div class="greentext text-5xl px-4 centerize-bottom">
+              <img src="assets/img/clients/registration.png" class="screen-form">
+            </div>
+            <div class="px-4">
+              <h4 class="feature-title">Registration</h4>
+              <p class="text-gray-600">Create an account and become one of our users</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work item -->
+        <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 pt-20">
+          <div class="m-4 wow fadeInRight graybackground rounded-lg" data-wow-delay="0.3s">
+            <div class="greentext text-5xl px-4 centerize-bottom">
+              <img src="assets/img/clients/magic.png" class="screen-form">
+            </div>
+            <div class="px-4">
+              <h4 class="feature-title">A little magic</h4>
+              <p class="text-gray-600">We create a unique barcode that you will use after each purchase</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Work item -->
+        <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 pt-20">
+          <div class="m-4 wow fadeInRight graybackground rounded-lg" data-wow-delay="0.3s">
+            <div class="greentext text-5xl px-4 centerize-bottom">
+              <img src="assets/img/clients/environment.png" class="screen-form">
+            </div>
+            <div class="px-4">
+              <h4 class="feature-title">Environment</h4>
+              <p class="text-gray-600">Scan your barcode after each purchase and save the planet</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  </section>
+  <!-- How It Works? End -->
 
   <!-- Services Section Start -->
   <section id="services" class="py-24">
     <div class="container">
       <div class="text-center">
-        <h2 class="mb-12 section-heading wow fadeInDown text-black" data-wow-delay="0.3s">What is <p class="greentext">EcoCheck</p>?</h2>
+        <h2 class="mb-12 section-heading wow fadeInDown text-black" data-wow-delay="0.3s">More Information</h2>
       </div>
       <div class="flex flex-wrap">
         <!-- Services item -->
         <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
-          <div class="m-4 wow fadeInRight" data-wow-delay="0.3s">
-            <div class="greentext text-5xl">
+          <div class="m-4 wow fadeInRight graybackground rounded-lg" data-wow-delay="0.3s">
+            <div class="greentext text-5xl px-4">
               <i class="fa-solid fa-triangle-exclamation"></i>
             </div>
-            <div>
+            <div class="px-4">
               <h3 class="service-title">Problem we solve</h3>
-              <p class="text-gray-600">Minimize the cutting of <p class="greentext">trees</p><p class="graytext"> by preventing paper waste.</p>
+              <p class="text-gray-600">Minimize the cutting of <p class="greentext"><strong>trees</strong></p><p class="graytext"> by preventing paper waste.<br> <br> <br></p>
             </div>
           </div>
         </div>
         <!-- Services item -->
         <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
-          <div class="m-4 wow fadeInRight" data-wow-delay="0.6s">
-            <div class="greentext text-5xl">
+          <div class="m-4 wow fadeInRight graybackground rounded-lg" data-wow-delay="0.6s">
+            <div class="greentext text-5xl px-4">
               <i class="fa-solid fa-chart-simple"></i>
             </div>
-            <div>
+            <div class="px-4">
               <h3 class="service-title">Market Size</h3>
-              <p class="greentext text-5xl">9.000.000</p>
+              <p class="greentext text-5xl"><strong>9.000.000</strong></p>
               <p class="text-gray-600">Total available market (<strong>Azerbaijan</strong>)</p>
             </div>
           </div>
         </div>
         <!-- Services item -->
         <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
-          <div class="m-4 wow fadeInRight" data-wow-delay="0.9s">
-            <div class="greentext text-5xl">
+          <div class="m-4 wow fadeInRight graybackground rounded-lg" data-wow-delay="0.9s">
+            <div class="greentext text-5xl px-4">
               <i class="fa-solid fa-tree"></i>
             </div>
-            <div>
+            <div class="px-4">
               <h3 class="service-title">Saved energy and resources</h3>
-              <p class="graytext">One saved <p class="greentext">tree</p><p class="graytext"> an save <strong>10.5 megawatt hours</strong> of energy and prevent <strong>30 kg of carbon</strong> emissions annually, as per a study in Environmental Management.</p>
+              <p class="graytext">One saved <p class="greentext"><strong>tree</strong></p><p class="graytext"> an save <strong>10.5 megawatt hours</strong> of energy and prevent <strong>30 kg of carbon</strong> emissions annually, as per a study in Environmental Management.</p>
             </div>
           </div>
         </div>
         <!-- Services item -->
         <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
-          <div class="m-4 wow fadeInRight" data-wow-delay="1.2s">
-            <div class="greentext text-5xl">
+          <div class="m-4 wow fadeInRight graybackground rounded-lg" data-wow-delay="1.2s">
+            <div class="greentext text-5xl px-4">
               <i class="fa-solid fa-square-check"></i>
             </div>
-            <div>
+            <div class="px-4">
               <h3 class="service-title">Solution</h3>
               <p class="text-gray-600">1. Online receipt instead of paper</p>
-              <p class="text-gray-600">2. Minimize the cost of receipt paper</p>
+              <p class="text-gray-600">2. Minimize the cost of receipt paper <br> <br> <br></p>
             </div>
           </div>
         </div>
         <!-- Services item -->
         <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
-          <div class="m-4 wow fadeInRight" data-wow-delay="1.5s">
-            <div class="greentext text-5xl">
+          <div class="m-4 wow fadeInRight graybackground rounded-lg" data-wow-delay="1.5s">
+            <div class="greentext text-5xl px-4">
               <i class="fa-solid fa-people-group"></i>
             </div>
-            <div>
+            <div class="px-4">
               <h3 class="service-title">Market Validation</h3>
-              <p class="greentext text-5xl">4.000.000</p>
-              <p class="text-gray-600">The number of people who enter the store per day in <strong>Azerbaijan</strong></p>
+              <p class="greentext text-5xl"><strong>4.000.000</strong></p>
+              <p class="text-gray-600">Daily store footfall (<strong>Azerbaijan</strong>)</p>
             </div>
           </div>
         </div>
         <!-- Services item -->
         <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3">
-          <div class="m-4 wow fadeInRight" data-wow-delay="1.8s">
-            <div class="greentext text-5xl">
+          <div class="m-4 wow fadeInRight graybackground rounded-lg" data-wow-delay="1.8s">
+            <div class="greentext text-5xl px-4">
               <i class="fa-solid fa-leaf"></i>
             </div>
-            <div>
+            <div class="px-4">
               <h3 class="service-title">Benefits for the Environment</h3>
               <p class="greentext text-5xl">10.000</p><p class="graytext">scans</p>
               <p class="graytext text-5xl">= </p>
               <p class="greentext text-5xl">1</p>
-              <p class="graytext">saved tree</p>
+              <p class="graytext">saved <p class="greentext"><strong>tree</strong></p>  <br> <br></p>
             </div>
           </div>
         </div>
@@ -187,7 +241,7 @@
             <div class="flex flex-wrap">
               <div class="w-full sm:w-1/2 lg:w-1/2">
                 <div class="">
-                  <div class="icon text-4xl">
+                  <div class="icon text-4xl marg-top">
                     <i class="fa-regular fa-money-bill-transfer"></i>
                   </div>
                   <div class="features-content">
@@ -198,7 +252,7 @@
               </div>
               <div class="w-full sm:w-1/2 lg:w-1/2">
                 <div>
-                  <div class="icon text-4xl">
+                  <div class="icon text-4xl marg-top">
                     <i class="fa-solid fa-chart-pie" style="color: #FF0000;"></i>
                   </div>
                   <div class="features-content">
@@ -233,8 +287,8 @@
           </div>
         </div>
         <div class="w-full lg:w-1/2" style="margin-top: 50px;">
-          <div class="ml-5 lg:mr-0 lg:ml-3 wow fadeInRight centerize" data-wow-delay="0.3s">
-            <img class="ml-5 screen-form1 float-right" src="assets/img/screens/Storeview.png" alt="VAT" style="z-index: 6;">
+          <div class="lg:mr-0 lg:ml-3 wow fadeInRight centerize" data-wow-delay="0.3s">
+            <img class="screen-form1 float-right" src="assets/img/screens/Storeview.png" alt="VAT" style="z-index: 6;">
             <img class="ml-5 screen-form2 float-right" src="assets/img/screens/Bonusesview.png" alt="VAT" style="margin-left: -40px; z-index: 4;">
             <img class="ml-5 screen-form3 float-right" src="assets/img/screens/Treeview.png" alt="VAT" style="margin-left: -30px; z-index: 2;">
           </div>
@@ -248,7 +302,7 @@
   <section id="team" class="py-24 text-center">
     <div class="container">
       <div class="text-center">
-        <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">Our Team</h2>
+        <h2 class="mb-12 section-heading wow fadeInDown" data-wow-delay="0.3s">Meet Our Team</h2>
       </div>
       <div class="flex flex-wrap justify-center">
         <div class="max-w-sm sm:w-1/2 md:w-1/2 lg:w-1/3">

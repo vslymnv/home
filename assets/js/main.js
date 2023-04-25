@@ -123,43 +123,6 @@
         navbarCollapse.classList.toggle('show')
       })
 
-
-    //======== tiny slider for testimonial
-    tns({
-      container: '.testimonials',
-      items: 1,
-      slideBy: 'page',
-      autoplay: false,
-      mouseDrag: true,
-      gutter: 0,
-      nav: false,
-      controls: false,
-    });
-
-    //======== tiny slider for portfolio
-    tns({
-      container: '.portfolio-carousel',
-      items: 3,
-      slideBy: 'page',
-      autoplay: false,
-      mouseDrag: true,
-      gutter: 30,
-      nav: true,
-      navPosition: 'bottom',
-      controls: false,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        765: {
-          items: 2,
-        },
-        1024: {
-          items: 3,
-        }
-      }
-    });
-
       //WOW Scroll Spy
       var wow = new WOW({
         //disabled for mobile

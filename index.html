@@ -19,7 +19,6 @@
   <link rel="stylesheet" type="text/css" href="assets/css/tiny-slider.css">
   <!-- Tailwind css -->
   <link rel="stylesheet" type="text/css" href="assets/css/tailwind.css">
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 <body>
 
@@ -54,7 +53,7 @@
               </li>
             </ul>
           </div>
-          <div class="text-center mb-15 wow fadeInUp" data-wow-delay="1.2s">
+          <div class="text-center mb-15 wow fadeInUp" data-wow-delay="0.8s">
             <button onclick="scroolNav('contact')" class="btn">Partnership</button>
           </div>
         </nav>
@@ -179,7 +178,7 @@
 
 
   <!-- Feature Section Start -->
-  <div id="feature" class="graybackground py-24">
+  <div id="feature" class="graybackground py-21">
     <div class="container">
       <div class="flex flex-wrap items-center">
         <div class="w-full lg:w-1/2">
@@ -233,11 +232,11 @@
             </div>
           </div>
         </div>
-        <div class="w-full lg:w-1/2" style="margin-top: 100px;">
-          <div class="mx-3 lg:mr-0 lg:ml-3 wow fadeInRight centerize" data-wow-delay="0.3s">
-            <img class="mx-auto screen-size-3 float-right" src="assets/img/screens/Treeview.png" alt="VAT">
-            <img class="mx-auto screen-size float-right" src="assets/img/screens/Bonusesview.png" alt="VAT">
-            <img class="mx-auto screen-size-2 float-right" src="assets/img/screens/Storeview.png" alt="VAT">
+        <div class="w-full lg:w-1/2" style="margin-top: 50px;">
+          <div class="ml-5 lg:mr-0 lg:ml-3 wow fadeInRight centerize" data-wow-delay="0.3s">
+            <img class="ml-5 screen-form1 float-right" src="assets/img/screens/Storeview.png" alt="VAT" style="z-index: 6;">
+            <img class="ml-5 screen-form2 float-right" src="assets/img/screens/Bonusesview.png" alt="VAT" style="margin-left: -40px; z-index: 4;">
+            <img class="ml-5 screen-form3 float-right" src="assets/img/screens/Treeview.png" alt="VAT" style="margin-left: -30px; z-index: 2;">
           </div>
         </div>
       </div>
@@ -259,9 +258,9 @@
             </div>
             <div class="text-center px-5 py-3">
               <h3 class="team-name">Rana Abdullayeva</h3>
-              <p>Co-Founder, CEO</p>
-              <a href="https://www.linkedin.com/in/rena-abdullayeva-781b67197/" class="social-link hover:bg-indigo-500">
-                <i class="lni lni-linkedin-original" aria-hidden="true"></i>
+              <p>Co-Founder & CEO</p>
+              <a href="https://www.linkedin.com/in/rena-abdullayeva-781b67197/" class="linkedin">
+                <img src="assets/img/clients/linkedinLogo.png">
               </a>
             </div>
           </div>
@@ -273,9 +272,9 @@
             </div>
             <div class="text-center px-5 py-3">
               <h3 class="team-name">Vusal Suleymanov</h3>
-              <p>Co-Founder, CTO</p>
-              <a href="https://www.linkedin.com/in/vusal-suleymanov/" class="social-link hover:bg-indigo-500">
-                <i class="lni lni-linkedin-original" aria-hidden="true"></i>
+              <p>Co-Founder & CTO</p>
+              <a href="https://www.linkedin.com/in/vusal-suleymanov/" class="linkedin">
+                <img src="assets/img/clients/linkedinLogo.png">
               </a>
             </div>
           </div>
@@ -288,8 +287,8 @@
             <div class="text-center px-5 py-3">
               <h3 class="team-name">Azar Mamiyev</h3>
               <p>Lead Developer</p>
-              <a href="https://www.linkedin.com/in/azarmamiyev/" class="social-link hover:bg-indigo-500">
-                <i class="lni lni-linkedin-original" aria-hidden="true"></i>
+              <a href="https://www.linkedin.com/in/azarmamiyev/" class="linkedin">
+                <img src="assets/img/clients/linkedinLogo.png">
               </a>
             </div>
           </div>
@@ -392,143 +391,105 @@
 <!-- carousel-area Section End -->
 
 <!-- Contact Section Start -->
-<section id="contact" class="py-24">    
+<section id="contact" class="py-22">    
   <div class="container">
     <div class="text-center">
       <h2 class="mb-16 text-4xl font-bold tracking-wide wow fadeInDown" data-wow-delay="0.3s">Contact</h2>
     </div>
 
-    <div class="flex flex-wrap contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
-      <div class="w-full md:w-1/2">
-        <div class="contact">
-          <h2 class="uppercase font-bold text-xl mb ml-3">Contact Form</h2>
-          <form action="#" class="form-contact">
-            <div class="flex flex-wrap">
-              <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
-                <div class="mx-3">
-                  <input type="text" class="form-input rounded-full" id="name" placeholder="Name" required data-error="Please enter your name">
-                </div>                                 
-              </div>
-              <div class="w-full sm:w-1/2 md:w-full lg:w-1/2">
-                <div class="mx-3">
-                  <input type="email" placeholder="Email" id="email" class="form-input rounded-full" required data-error="Please enter your email">
-                </div> 
-              </div>
-              <div class="w-full">
-                <div class="mx-3">
-                  <input type="text" placeholder="Subject" id="subject" name="subject" class="form-input rounded-full" required data-error="Please enter your subject">
-                </div>
-              </div>
-              <div class="w-full">
-                <div class="mx-3"> 
-                  <textarea class="form-input rounded-lg" id="message" name="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
-                </div>
-              </div>
-              <div class="w-full">
-                <div class="submit-button mx-3">
-                  <button id="submit" type="submit" class="btn">Send Message</button>
-                </div>
-              </div>
-            </div>            
-          </form>
-        </div>
-      </div>
-      <div class="w-full md:w-1/2">
-        <div class="ml-3 md:ml-12 wow fadeIn">
+    <div class="flex contact-form-area wow fadeInUp" data-wow-delay="0.4s">  
+      <div class="w-full">
+        <div class="ml-3 wow fadeIn">
           <h2 class="uppercase font-bold text-xl mb">Get In Touch</h2>
           <div>
-            <div class="flex flex-wrap mb-6 items-center">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1145.868211050891!2d49.859844606347686!3d40.4095074940613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2saz!4v1682277036826!5m2!1sru!2saz" width="650" height="263" style="border:5; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="flex mb-6 items-center">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1145.868211050891!2d49.859844606347686!3d40.4095074940613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2saz!4v1682277036826!5m2!1sru!2saz&amp;markers=40.410339, 49.859521" width="9999" height="300" style="border:5; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="flex flex-wrap mb-6 items-center">
-              <div class="contact-icon">
-                <i class="lni lni-envelope"></i>
+            <div class="flex flex-wrap mb-4 marg-top2 items-center">
+              <p class="text-gray-500" style="margin-right: 30px; padding: 20px 0 20px 0;">Do you have a query, feedback, recommendation, or simply wish to make contact?</p>
+              <p>
+                <a href="mailto:ecocheckaz@gmail.com" class="btn">
+                  Email us<i class="fa-solid fa-paper-plane pl-2"></i></a>
+                </p>
               </div>
-              <p class="pl-3">
-                <a href="mailto:ecocheckaz@gmail.com" class="block">ecocheckaz@gmail.com</a>
-              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div> 
-</section>
-<!-- Contact Section End -->
-
-<!-- Map Section Start -->
-<div style="display: none;">
-  <section id="google-map-area">
-    <div class="mx-6 mb-6">
-      <div class="flex">
-        <div class="w-full">
-          <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>
-        </div>
-      </div>
-    </div>
+    </div> 
   </section>
-</div>
-<!-- Map Section End -->
+  <!-- Contact Section End -->
 
-<!-- Footer Section Start -->
-<footer id="footer" class="bg-gray-800 py-16">
-  <div class="container">
-    <div class="flex flex-wrap">
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.2s">
-        <div class="mx-3 mb-8">
-          <div class="footer-logo mb-3">
-            <h3 class="font-bold text-2xl leading-snug text-white mb-10 wow fadeInUp" data-wow-delay="1s">EcoCheck</h3>
+  <!-- Map Section Start -->
+  <div style="display: none;">
+    <section id="google-map-area">
+      <div class="mx-6 mb-6">
+        <div class="flex">
+          <div class="w-full">
+            <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7887109309127!2d-77.44196278417968!3d38.95165507956235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU3JzA2LjAiTiA3N8KwMjYnMjMuMiJX!5e0!3m2!1sen!2sbd!4v1545420879707"></object>
           </div>
-          <p class="text-gray-300">
-          Our goal is to transition to a next-generation receipt system that contributes to our ecology by eliminating paper receipts🌱</p>
         </div>
       </div>
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.4s">
-        <div class="mx-3 mb-8">
-          <h3 class="font-bold text-xl text-white mb-5">Company</h3>
-          <ul>
-            <li><a href="#contact" class="footer-links">Contact us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.6s">
-        <div class="mx-3 mb-8">
-          <h3 class="font-bold text-xl text-white mb-5">About</h3>
-          <ul>
-            <li><a href="#team" class="footer-links">Team</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="mx-3 mb-8">
-          <h3 class="font-bold text-xl text-white mb-5">Find us on</h3>
+    </section>
+  </div>
+  <!-- Map Section End -->
 
-          <ul class="social-icons flex justify-start">
-          </li>
-          <li class="mx-2">
-            <a href="https://www.facebook.com/profile.php?id=100090750064541"
-            class="footer-icon hover:bg-indigo-500">
-            <i class="lni lni-facebook-original" aria-hidden="true"></i>
-          </a>
-        </li>
-      </li>
-      <li class="mx-2">
-        <a href="https://www.instagram.com/ecocheck.az/"
-        class="footer-icon hover:bg-red-500">
-        <i class="lni lni-instagram-original" aria-hidden="true"></i>
-      </a>
-    </li>
-    <li class="mx-2">
-      <a href="https://www.linkedin.com/company/ecocheck0/"
-      class="footer-icon hover:bg-indigo-600">
-      <i class="lni lni-linkedin-original" aria-hidden="true"></i>
-    </a>
-  </li>
-</ul>
-</div>
-</div>
-</div>
-</div>     
+  <!-- Footer Section Start -->
+  <footer id="footer" class="bg-gray-800 py-16">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="mx-3 mb-8">
+            <div class="footer-logo mb-3">
+              <h3 class="font-bold text-2xl leading-snug text-white mb-10 wow fadeInUp" data-wow-delay="0.4s">EcoCheck</h3>
+            </div>
+            <p class="text-gray-300">
+            Our goal is to transition to a next-generation receipt system that contributes to our ecology by eliminating paper receipts🌱</p>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="mx-3 mb-8">
+            <h3 class="font-bold text-xl text-white mb-5">Company</h3>
+            <ul>
+              <li><a href="#contact" class="footer-links">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="mx-3 mb-8">
+            <h3 class="font-bold text-xl text-white mb-5">About</h3>
+            <ul>
+              <li><a href="#team" class="footer-links">Team</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 wow fadeInUp" data-wow-delay="0.4s">
+          <div class="mx-3 mb-8">
+            <h3 class="font-bold text-xl text-white mb-5">Find us on</h3>
+
+            <ul class="social-icons flex justify-start">
+              <li class="mx-2">
+                <a href="https://www.facebook.com/profile.php?id=100090750064541" class="footer-icon hover:bg-indigo-500">
+                <i class="lni lni-facebook-original"></i>
+                </a>
+              </li>
+
+              <li class="mx-2">
+                <a href="https://www.instagram.com/ecocheck.az/" class="footer-icon hover:bg-red-500">
+                <i class="lni lni-instagram-original" aria-hidden="true"></i>
+                </a>
+              </li>
+
+              <li class="mx-2">
+                <a href="https://www.linkedin.com/company/ecocheck0/" class="footer-icon hover:bg-indigo-600">
+                <i class="lni lni-linkedin-original" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>     
 </footer> 
 <!-- Footer Section End -->
 
@@ -558,6 +519,5 @@
     <script src="assets/js/wow.js"></script>
     <script src="assets/js/tiny-slider.js"></script>    
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/index.js"></script>
   </body>
-</html>
+  </html>

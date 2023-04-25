@@ -905,9 +905,19 @@ video {
   width: 25%;
 }
 
-.screen-size-3 {
+.screen-form1 {
+  height: 45%;
+  width: 45%;
+}
+
+.screen-form2 {
   height: 35%;
   width: 35%;
+}
+
+.screen-form3 {
+  height: 25%;
+  width: 25%;
 }
 
 .float-right{
@@ -932,6 +942,10 @@ video {
 
 .ml-3{
   margin-left: 0.75rem;
+}
+
+.ml-5 {
+  margin-left: 4rem;
 }
 
 .mb-4{
@@ -1035,6 +1049,16 @@ video {
   padding-bottom: 5rem;
 }
 
+.py-22 {
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+}
+
+.py-21 {
+  padding-top: 4.5rem;
+  padding-bottom: 8rem;
+}
+
 .py-24{
   padding-top: 6rem;
   padding-bottom: 9rem;
@@ -1043,6 +1067,10 @@ video {
 .py-32{
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+.pl-2 {
+  padding-left: 0.45rem;
 }
 
 .pl-3{
@@ -1054,7 +1082,7 @@ video {
 }
 
 .pt-48{
-  padding-top: 11rem;
+  padding-top: 9rem;
 }
 
 .fixed{
@@ -1236,6 +1264,12 @@ p {
   color: #6058E1;
 }
 
+.whitetext {
+  display: inline;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
 .graybackground{
   background-color: #FAFAFA;
 }
@@ -1361,6 +1395,10 @@ p {
   margin-top: 3rem;
 }
 
+.margin-top2 {
+  margin-top: 2.5rem;
+}
+
 .service-title {
   --text-opacity: 1;
   color: #2d3748;
@@ -1376,7 +1414,8 @@ p {
   --text-opacity: 1;
   color: #2d3748;
   color: rgba(45, 55, 72, var(--text-opacity));
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 22px;
   display: block;
   margin-bottom: 0.75rem;
 }
@@ -1458,7 +1497,6 @@ p {
   text-transform: uppercase;
   font-size: 1.125rem;
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .client-logo {
@@ -1564,6 +1602,14 @@ p {
   border-color: rgba(49, 130, 206, var(--border-opacity));
 }
 
+.linkedin {
+  height: 1.3rem;
+  margin-top: 0.5rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .contact-icon {
   width: 2.5rem;
   height: 2.5rem;
@@ -1598,13 +1644,11 @@ p {
   align-items: center;
   width: 2rem;
   height: 2rem;
-  --bg-opacity: 1;
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  background-color: #1AC854;
+  background-color: #1AC854;
   border-radius: 5px;
-  font-size: 1.3rem;
-  --text-opacity: 1;
-  color: #1AC854;
+  font-size: auto;
+  color: #FFF;
   transition-duration: 300ms;
 }
 

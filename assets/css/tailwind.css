@@ -756,6 +756,31 @@ video {
   border-top-width: 2px;
 }
 
+.green-underline {
+  position: relative;
+  z-index: -1;
+}
+
+.green-underline::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 6px;
+  background-color: #1AC854;
+  animation: draw 0.5s forwards;
+  animation-delay: 1.5s;
+  z-index: -1;
+}
+
+@keyframes draw {
+  to {
+    width: 100%;
+  }
+}
+
 .block{
   display: block;
 }
